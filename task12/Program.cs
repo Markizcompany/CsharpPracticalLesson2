@@ -17,6 +17,5 @@ else Console.WriteLine($"Не кратно, остаток {result}");
 
 int Check(int num1, int num2)
 {
-    int firstDigit = num1 % num2;
-    return firstDigit;
+    return num1 % num2;
 }
