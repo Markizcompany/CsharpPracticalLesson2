@@ -6,6 +6,7 @@
 // 12821 -> да
 
 int number = Prompt("Введите число ");
+if (number < 0) number = number * -1;
 int reverseNumber = ReverseNumber(number);
 if (number == reverseNumber) Console.WriteLine("да");
 else Console.WriteLine("нет");
