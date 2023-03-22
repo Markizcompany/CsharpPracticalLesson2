@@ -37,9 +37,9 @@ void PrintMatrix(int[,] matrix)
 
 void ReplaceRowsToColums(int[,] matrix)
 {
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0) - 1; i++)
     {
-        for (int j = i; j < matrix.GetLength(1); j++)
+        for (int j = i + 1; j < matrix.GetLength(1); j++)
         {
             int temp = matrix[i, j];
             matrix[i, j] = matrix[j, i];
@@ -55,7 +55,7 @@ Console.WriteLine();
 
 int rows = array2d.GetLength(0);
 int colums = array2d.GetLength(1);
-if (rows != colums) Console.WriteLine("Невозможно в данном массиве поменять строки на столбцы");
+if (rows != colums) Console.WriteLine("Невозможно в данном массиве поменять строки на столбцы, измените размер массива");
 else
 {
     ReplaceRowsToColums(array2d);
