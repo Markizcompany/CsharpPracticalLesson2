@@ -10,12 +10,14 @@ int numbe = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число степени: ");
 int power = int.Parse(Console.ReadLine());
 
+
 if (power < 0) Console.WriteLine("Ошибка ввода степени. Степень не может быть отрицательной");
 else
 {
     int powNumber = PowNumber(numbe, power);
     Console.WriteLine($"{powNumber}");
 }
+
 
 int PowNumber(int num, int pow)
 {
